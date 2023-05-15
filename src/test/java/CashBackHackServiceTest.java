@@ -22,6 +22,17 @@ public class CashBackHackServiceTest {
     }
 
     @Test
+    public void testRemainSum1000(){
+
+        // Этот тест падает
+        int amount = 1000;
+
+        int actual = service.remain(amount);
+        int expected = 0;
+        assertEquals(actual, expected);
+    }
+
+    @Test
     public void testRemainSum999(){
         int amount = 999;
 
