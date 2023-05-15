@@ -31,6 +31,17 @@ public class CashBackHackServiceTest {
     }
 
     @Test
+    public void testRemainSum1000(){
+
+        //тут ошибка
+        int amount = 1000;
+
+        int actual = service.remain(amount);
+        int expected = 0;
+        assertEquals(actual, expected);
+   }
+
+    @Test
     public void testRemainSum1001(){
         int amount = 1001;
 
